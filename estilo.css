@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    background-color: #005f6b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#00dffc;
+}
+
+header{
+    background-color:#008c9e ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 25px;
+    color:#343838 ;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+
+}
+
+.corrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards linear;
+}
+
+.imagens{
+    position: absolute;
+    width: 250px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.imagens span{
+    margin: auto;
+    font-size:1em; 
+}
+
+@keyframes rotate360{
+    from{
+        transform: rotate(0deg);
+
+    }
+    
+    to{
+        transform: rotatey(-360deg);
+    }
+    
+}
+
+.imagens:nth-child(1){
+    background-image: url(https://www.stockvault.net/data/2012/10/28/136941/preview16.jpg);
+    transform: rotatey(0deg) translatez(430px);
+    border-radius:2em ;
+} 
+
+.imagens:nth-child(2){
+    background-image: url(https://www.stockvault.net/data/2012/09/20/135830/preview16.jpg);
+    transform: rotatey(40deg) translatez(430px);
+    border-radius:2em ;
+}
+
+.imagens:nth-child(3){
+    background-image: url(https://www.stockvault.net/data/2013/11/16/150786/preview16.jpg);
+    transform: rotatey(80deg) translatez(430px);
+    border-radius:2em ;
+}
+
+.imagens:nth-child(4){
+    background-image: url(https://www.stockvault.net/data/2010/09/20/114904/preview16.jpg);
+    transform: rotatey(120deg) translatez(430px);
+    border-radius:2em ;
+}
+
+.imagens:nth-child(5){
+    background-image: url(https://www.stockvault.net/data/2015/04/29/171040/preview16.jpg);
+    transform: rotatey(160deg) translatez(430px);
+    border-radius:2em ;
+}
+
+.imagens:nth-child(6){
+    background-image: url(https://www.stockvault.net/data/2016/08/15/207263/preview16.jpg);
+    transform: rotatey(200deg) translatez(430px);
+    border-radius:2em ;
+}
+
+.imagens:nth-child(7){
+    background-image: url(https://www.stockvault.net/data/2013/10/20/149544/preview16.jpg);
+    transform: rotatey(240deg) translatez(430px);
+    border-radius:2em ;
+}
+
+.imagens:nth-child(8){
+    background-image: url(https://www.stockvault.net/data/2023/01/28/296703/preview16.jpg);
+    transform: rotatey(280deg) translatez(430px);
+    border-radius:2em ;
+}
+
+.imagens:nth-child(9){
+    background-image: url(https://www.stockvault.net/data/2009/11/22/112101/preview16.jpg);
+    transform: rotatey(320deg) translatez(430px);
+    border-radius:2em ;
+}
+
+footer{
+    background-color:#00b4cc ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    color:#343838 ;
+    text-align: center;
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom:0 ;
+    font-size: 25px;
+
+}
